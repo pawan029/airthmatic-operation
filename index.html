@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+	
+	
+			function add() {
+				var x=document.getElementById('addx').value;
+				var y=document.getElementById('addy').value;
+
+				 var a=eval(x) + eval(y);
+				 console.log(a);
+				document.getElementById('ans').innerHTML=a;
+			}
+			function sub() {
+				var x=document.getElementById('addx').value;
+				var y=document.getElementById('addy').value;
+
+				 var a=eval(x) - eval(y);
+				 console.log(a);
+				document.getElementById('ans').innerHTML=a;
+			}
+			function mul() {
+				var x=document.getElementById('addx').value;
+				var y=document.getElementById('addy').value;
+
+				 var a=eval(x) * eval(y);
+				 console.log(a);
+				document.getElementById('ans').innerHTML=a;
+			}
+			
+		
+
+	</script>
+	<style type="text/css">
+		div
+		{
+			width: 20px;
+			height: 20px;
+
+			border: 1px solid;
+		}
+	</style>
+</head>
+<body   >
+<div><input type="text" id="addx" ></div>
+<div><input type="text" id="addy"></div>
+=
+<div id="ans"></div>
+
+<button type="button" onclick="add()">Add</button>
+<button type="button" onclick="sub()">Sub</button>
+<button type="button" onclick="mul()">Mul</button>
+
+	
+
+</body>
+</html>
